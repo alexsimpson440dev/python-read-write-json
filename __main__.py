@@ -12,7 +12,8 @@ def main():
     password = str(input("Password: "))
 
     write.add_data(name, age, username, password)
-    read.read_data()
+    json_data = read.read_data()
+    print(json_data)
 
 
 if __name__ == '__main__':
